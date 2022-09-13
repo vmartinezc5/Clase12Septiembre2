@@ -15,6 +15,10 @@ if(isset($_POST['btnEditar']))
  header('Location: vistaEstudiante.php');
         
 }
-
-
 /*EDITAR*/
+if(isset($_POST['btnEliminar']))
+{
+ $nuevoEstudiante->EliminarEstudiante($_POST['idStudent'],$_POST['txtapellidos'],$_POST['txtnombre'],$_POST['direccion'],$_POST['telefono']); 
+ header('Location: vistaEstudiante.php');
+        
+}
