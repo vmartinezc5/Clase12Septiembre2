@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- JavaScript Bundle with Popper -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"><script src="https://kit.fontawesome.com/a87f2bfe07.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
     <p>
-        <h2>INGRESO DE DATOS DEL ESTUDIANTE</h2>
+        <center><h1>INGRESO DE DATOS DEL ESTUDIANTE</h1></center>
+        <hr class="border border-primary border-3 opacity-75">
     </p>
     <form action="EstudianteController.php" method="post">
         <p>
@@ -35,10 +39,10 @@
             <input type="submit" value="Guardar Registro" name="btnGuardar">
         </p>
     </form>
-    <hr>
-    <h3>LISTADO DE ESTUDIANTES</h3>
-    <hr>
-    <table border="1">
+    <hr class="border border-primary border-3 opacity-75">
+    <center><h3>LISTADO DE ESTUDIANTES</h3></center>
+    <hr class="border border-primary border-2 opacity-75">
+    <table class="table table-dark table-striped-columns">
         <th>NOMBRE</th>
         <th>APELLIDOS</th>
         <th>DIRECCION</th>
@@ -56,8 +60,8 @@
                 <td>  <?php echo $Estudiantes['direccion'] ?> </td>
                 <td>  <?php echo $Estudiantes['telefono'] ?> </td>
                 <td><a href="VistaEditarEstudiante.php?idEst=<?php echo $Estudiantes['idEstudiante'];?>">EDITAR</a></td>
-                <td><a href="VistaEliminarEstudiante.php?idEst=<?php echo $Estudiantes['idEstudiante'];?>">Eliminar</a></td>
-          </tr>
+                <td><a href="VistaEliminarEstudiante.php?idEst=<?php echo $Estudiantes['idEstudiante'];?>">ELIMINAR</a></td>
+        </tr>
           
        <?php } ?>
     

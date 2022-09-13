@@ -16,6 +16,8 @@ if(isset($_POST['btnEditar']))
         
 }
 /*EDITAR*/
+
+/*ELIMINAR*/
 if(isset($_POST['btnEliminar']))
 {
  $nuevoEstudiante->EliminarEstudiante($_POST['idStudent'],$_POST['txtapellidos'],$_POST['txtnombre'],$_POST['direccion'],$_POST['telefono']); 
